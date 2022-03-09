@@ -13,10 +13,10 @@
     <section class="left">
       <div class="section-head">
         <h2>Recent Scores</h2>
-        <button type="button">Refresh</button>
+        <button id="refresh-btn" type="button">Refresh</button>
       </div>
       <div class="section-body">
-        <ul>
+        <ul class="score-board">
           <li>Name: Joy</li>
           <li>Name: Rebecca</li>
           <li>Name: Victor</li>
@@ -33,9 +33,10 @@
       </div>
       <div class="section-body end">
         <form>
-          <input type="text" placeholder="Your name">
-          <input type="text" placeholder="Your score">
-          <button type="submit">Submit</button>
+          <input class="name-input" type="text" placeholder="Your name">
+          <input class="score-input" type="number" placeholder="Your score">
+          <div class="fail-alert"></div>
+          <button id="submit-btn" type="submit">Submit</button>
         </form>
       </div>
     </section>

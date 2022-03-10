@@ -9,6 +9,7 @@ Our goal here is to Build a Leaderboard application where you can add your name 
 
 - UI/UX design
 - Integrated webpack
+- Send and receive data from an API.
 
 ## Built With
 

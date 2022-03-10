@@ -13,8 +13,7 @@ export const getScore = async () => {
 export const addScores = async () => {
   const response = await fetch(requestURL, {
     method: 'POST',
-    headers: {
-      'Content-Type' : 'application/json',},
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(
       {
         user: userInput.value.trim(),

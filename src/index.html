@@ -13,17 +13,11 @@
     <section class="left">
       <div class="section-head">
         <h2>Recent Scores</h2>
-        <button type="button">Refresh</button>
+        <button id="refresh-btn" type="button">Refresh</button>
       </div>
       <div class="section-body">
-        <ul>
-          <li>Name: Joy</li>
-          <li>Name: Rebecca</li>
-          <li>Name: Victor</li>
-          <li>Name: Emeka</li>
-          <li>Name: Mathew</li>
-          <li>Name: Alex</li>
-          <li>Name: Chinwe</li>
+        <ul id="score-board">
+          <!-- Scores Generated Dynamically with JS -->
         </ul>
       </div>
     </section>
@@ -32,10 +26,11 @@
         <h2>Add Your Score</h2>
       </div>
       <div class="section-body end">
-        <form>
-          <input type="text" placeholder="Your name">
-          <input type="text" placeholder="Your score">
-          <button type="submit">Submit</button>
+        <form id="form">
+          <input class="name-input" type="text" placeholder="Your name" required>
+          <input class="score-input" type="number" placeholder="Your score" required>
+          <div class="fail-alert"></div>
+          <button id="submit-btn" type="submit">Submit</button>
         </form>
       </div>
     </section>

@@ -1,6 +1,6 @@
 import './style.css';
 import { addScores } from './modules/lead-api.js';
-import { refreshScore } from './modules/score.js';
+import  refreshScore  from './modules/score.js';
 
 const form = document.querySelector('#form');
 const refreshBtn = document.querySelector('#refresh-btn');

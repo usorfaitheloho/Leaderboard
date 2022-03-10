@@ -1,29 +1,23 @@
 import './style.css';
 import {
-  addScores,getScore,userInput,scoreInput,
+  addScores
 } from './modules/lead-api.js';
+import {refreshScore} from './modules/score.js';
 
-const submitBtn = document.querySelector('#submit-btn');
-const failAlert = document.querySelector('.fail-alert');
+const form = document.querySelector('#form');
 const refreshBtn = document.querySelector('#refresh-btn');
 
-window.addEventListener('pageshow',()=>{
-  getScore();
-});
+refreshScore();
 
 refreshBtn.addEventListener('click', () =>{
-  getScore();
+  refreshScore();
 });
 
-submitBtn.addEventListener('click',()=>{
-  if(scoreInput.value === '' || userInput.value === ''){
-    scoreInput.value = '';
-    failAlert.innerHTML = 'Submission failed. Try again.';
-  }else{
-    addScores();
-  }
+form.addEventListener('submit',async (e) =>{
+  e.preventDefault();
+ await addScores();
+  refreshScore();
+  form.reset();
 });
 
-scoreInput.addEventListener('click',() =>{
-  failAlert.innerHTML = '';
-});
+

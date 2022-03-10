@@ -39,6 +39,8 @@ main {
 .left .section-body ul li {
   list-style: none;
   height: 30px;
+  display: flex;
+  padding-left: 10px;
 }
 
 .left .section-body ul li:nth-child(even) {

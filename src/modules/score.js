@@ -18,4 +18,4 @@ const refreshScore = async () => {
   data.sort((player1, player2) => player2.score - player1.score);
   renderScore(data);
 };
-export default refreshScore();
+export default refreshScore;

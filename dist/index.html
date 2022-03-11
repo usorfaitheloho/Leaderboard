@@ -6,11 +6,10 @@
     <title>Faith's Leaderboard</title>
 <script defer src="main.js"></script></head>
 <body>
-  <header>
+  <section class="main-body">
     <h1>Leaderboard</h1>
-  </header>
-  <main>
-    <section class="left">
+  <section class="major">
+    <div class="left">
       <div class="section-head">
         <h2>Recent Scores</h2>
         <button id="refresh-btn" type="button">Refresh</button>
@@ -20,8 +19,8 @@
           <!-- Scores Generated Dynamically with JS -->
         </ul>
       </div>
-    </section>
-    <section class="right">
+    </div>
+    <div class="right">
       <div class="section-head">
         <h2>Add Your Score</h2>
       </div>
@@ -29,12 +28,11 @@
         <form id="form">
           <input class="name-input" type="text" placeholder="Your name" required>
           <input class="score-input" type="number" placeholder="Your score" required>
-          <div class="fail-alert"></div>
           <button id="submit-btn" type="submit">Submit</button>
         </form>
       </div>
+    </div>
     </section>
-  </main>
-    
+</section>  
 </body>
 </html>

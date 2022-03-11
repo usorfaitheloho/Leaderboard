@@ -14,7 +14,7 @@ header {
   margin: 50px 0 30px 20vw;
 }
 
-fieldset {
+.main-body {
   width: 85%;
   margin: 0 auto;
   padding: 30px;
@@ -24,9 +24,9 @@ fieldset {
   border: 5px solid rgba(135, 206, 235, 0.6);
 }
 
-legend {
+h1 {
   color: rgb(17, 226, 80);
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   float: none;
   width: auto;
@@ -38,7 +38,7 @@ legend {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.main {
+.major {
   display: flex;
   margin: 50px;
   justify-content: center;

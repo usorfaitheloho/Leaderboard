@@ -15,9 +15,9 @@ header {
 }
 
 fieldset {
-  padding-top: 90px;
   width: 85%;
   margin: 0 auto;
+  padding: 30px;
   background-color: rgba(7, 98, 134, 0.1);
   backdrop-filter: blur(5px);
   border-radius: 20px;
@@ -38,7 +38,7 @@ legend {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-main {
+.main {
   display: flex;
   margin: 50px;
   justify-content: center;

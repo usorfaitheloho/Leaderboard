@@ -7,20 +7,52 @@
 html,
 body {
   overflow-x: hidden;
+  background-image: url("../assets/background.jpg");
 }
 
 header {
   margin: 50px 0 30px 20vw;
 }
 
+fieldset {
+  padding-top: 90px;
+  width: 85%;
+  margin: 0 auto;
+  background-color: rgba(7, 98, 134, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 5px solid rgba(135, 206, 235, 0.6);
+}
+
+legend {
+  color: rgb(17, 226, 80);
+  font-size: 3rem;
+  text-align: center;
+  float: none;
+  width: auto;
+  padding: 5px 20px;
+  border: 5px solid rgba(9, 136, 240, 0.5);
+  border-radius: 25px;
+  margin: 0;
+  background-color: rgba(135, 206, 235, 0.4);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 main {
   display: flex;
   margin: 50px;
   justify-content: center;
+  gap: 50px;
 }
 
 .section-head {
   display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 30px;
+  color: #fff;
 }
 
 .section-body {
@@ -29,10 +61,15 @@ main {
 
 .left {
   margin-right: 70px;
+  flex-basis: 65%;
+}
+
+.right {
+  flex-basis: 45%;
 }
 
 .left .section-body {
-  border: 2px solid black;
+  border: 2px solid rgb(253, 248, 248);
   min-width: 30vw;
 }
 
@@ -41,10 +78,11 @@ main {
   height: 30px;
   display: flex;
   padding-left: 10px;
+  color: #fff;
 }
 
 .left .section-body ul li:nth-child(even) {
-  background-color: #999;
+  background-color: rgba(41, 120, 151, 0.849);
 }
 
 .end {
@@ -68,18 +106,19 @@ form input {
 }
 
 button {
-  border: 2px solid rgb(17, 16, 16);
-  width: 70px;
-  height: 30px;
+  width: 130px;
+  height: 50px;
   margin-left: 15px;
-  box-shadow: 3px 5px #999;
+  padding: 8px;
+  border-radius: 7px;
+  outline: none;
+  color: #fff;
+  font-size: 17px;
+  border: 1px solid rgb(4, 178, 247);
+  background-color: rgb(4, 178, 247);
 }
 
 form button {
   margin: 0;
   justify-content: flex-end;
-}
-
-.fail-alert {
-  color: red;
 }

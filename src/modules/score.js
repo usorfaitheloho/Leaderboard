@@ -6,7 +6,7 @@ const renderScore = async (data) => {
   let scoreHTML = '';
   data.forEach(({ user, score }) => {
     scoreHTML += `<li>
-      <p class="name">${user}</p>
+      <p class="name">${user} : &nbsp;</p>
       <p class="score">${score}</p>
     </li>
     `;
